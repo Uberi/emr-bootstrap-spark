@@ -15,7 +15,7 @@ sudo yum-config-manager --enable epel
 
 # Install packages
 curl https://bintray.com/sbt/rpm/rpm | sudo tee /etc/yum.repos.d/bintray-sbt-rpm.repo
-sudo yum -y install git jq htop tmux libffi-devel aws-cli postgresql-devel zsh snappy-devel readline-devel emacs
+sudo yum -y install git jq htop tmux libffi-devel aws-cli postgresql-devel zsh snappy-devel readline-devel emacs nethogs w3m
 sudo yum -y install --nogpgcheck sbt # bintray doesn't sign packages for some reason, this isn't ideal but is the only way to install sbt
 
 # Download jars
